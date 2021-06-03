@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conway's Game of Life</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+</head>
+<body>
+	<h1>Conway's Game of Life</h1>
+	<button class="button" onclick = "dead()">Clear</button>
+	<button class="button" onclick = "numRandom()">Random</button>
+
+ 	<label>Still lifes:</label>
+  	<select onchange="scheduleA.call(this, event)">
+	    <option value="0">Choose</option>
+	    <option value="1">Block</option>
+	    <option value="2">Beehive</option>
+	</select>
+
+	<label>Oscillators:</label>
+  	<select onchange="scheduleB.call(this, event)">
+	    <option value="0">Choose</option>
+	    <option value="1">Blinker</option>
+	    <option value="2">Toad</option>
+	    <option value="3">Beacon</option>
+	    <option value="4">Pentadecathlon</option>
+	    <option value="5">Clock</option>
+	    <option value="6">Pulsar</option>
+	</select>
+
+	<label>Spaceships and gliders:</label>
+  	<select onchange="scheduleC.call(this, event)">
+	    <option value="0">Choose</option>
+	    <option value="1">Glider</option>
+	    <option value="2">Lightweight spaceship</option>
+	    <option value="3">Gosper glider gun </option>
+	</select>
+
+	
+	<script src="sketch.js"></script>
+</body>
+</html>

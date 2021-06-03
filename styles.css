@@ -1,0 +1,9 @@
+body{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: rgb(40, 40, 40);
+	font-family: 'Abel';
+	color: white;
+	overflow: hidden;
+}
